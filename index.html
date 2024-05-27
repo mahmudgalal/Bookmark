@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bookmark</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=PT+Sans+Caption:wght@400;700&family=Pacifico&family=Righteous&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+      integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="CSS/bootstrap.min.css" />
+    <link rel="stylesheet" href="CSS/main.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="bord position-relative">
+        <div class="text mt-5 mx-auto">
+          <div class="background"></div>
+          <h1>Bookmarker</h1>
+        </div>
+      </div>
+      <div class="main my-5 py-4">
+        <div class="text-center">
+          <h2>
+            <i class="fa-solid fa-bookmark"></i>
+            Bookmark your favorite sites
+            <i class="fa-solid fa-bookmark"></i>
+          </h2>
+        </div>
+        <div class="site mt-5">
+          <label for="bookmarkName" class="pb-3">
+            <i class="fa-solid fa-book-bookmark pe-2"></i>
+            <span>Site Name</span>
+          </label>
+          <input
+            type="text"
+            name="siteName"
+            id="bookmarkName"
+            placeholder="Bookmark Name"
+            class="form-control"
+          />
+        </div>
+        <div class="site mt-4">
+          <label for="bookmarkUrl" class="pb-3">
+            <i class="fa-solid fa-link pe-2"></i>
+            <span>Site URL</span>
+          </label>
+          <input
+            type="text"
+            name="siteName"
+            id="bookmarkUrl"
+            placeholder="Bookmark URL"
+            class="form-control"
+          />
+        </div>
+        <div class="text-center button position-relative">
+          <button class="btn btn-submit px-5 mt-4" id="submitButton">Submit</button>
+        </div>
+      </div>
+      <table class="table text-center bg-light">
+        <thead>
+          <tr>
+            <th>Index</th>
+            <th>Website Name</th>
+            <th>Visit</th>
+            <th>Delete</th>
+          </tr>
+        </thead>
+        <tbody id="tableContent">
+         
+        </tbody>
+      </table>
+    </div>
+    <div class="position-absolute top-0 start-0 w-100 h-100 all d-none" id="info">
+      <div class="info translate-middle bg-body position-absolute top-50 start-50 rounded">
+        <i class="fa-solid fa-xmark close fs-3 position-absolute end-0 pe-3 pt-2" id="close"></i>
+        <h5 class="mt-5 ps-3 pe-3 pt-4">Site Name or Url is not valid, Please follow the rules below :</h5>
+       <div class="rules ms-3 mt-3">
+          <p class="mb-0"><i class="fa-regular fa-circle-right p-2 text-danger"></i> Site name must contain at least 3 characters</p>
+          <p><i class="fa-regular fa-circle-right p-2 text-danger"></i> Site URL must be a valid one</p>
+       </div>
+      </div>
+    </div>
+
+
+
+
+
+    <script src="JS/index.js"></script>
+  </body>
+</html>
